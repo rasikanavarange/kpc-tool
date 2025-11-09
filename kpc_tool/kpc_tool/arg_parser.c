@@ -22,7 +22,7 @@ void parse_arguments(int argc, char* argv[], struct profiler_config* config) {
         {"target-pid", required_argument, 0, 'p'},
         {"total-profile-time", required_argument, 0, 't'},
         {"sample-period", required_argument, 0, 's'},
-        {"help", required_argument, 0, 'h'},
+        {"help", no_argument, 0, 'h'},
         {0, 0, 0, 0}
     };
     
