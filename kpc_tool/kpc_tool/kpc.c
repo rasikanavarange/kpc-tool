@@ -412,10 +412,10 @@ int profile_process(const int target_pid, const double total_profile_time, const
     }
     
     // Print header
-    printf("       tid,       dur,");
+    printf("           tid,           dur,");
     for (usize i = 0; i < ev_count; i++) {
         const event_alias *alias = profile_events + i;
-        printf("%10s,", alias->alias);
+        printf("%14s,", alias->alias);
     }
     printf("\n");
     
@@ -427,11 +427,11 @@ int profile_process(const int target_pid, const double total_profile_time, const
         for (usize c = 0; c < counter_count; c++) {
             counters_one[c] += data->counters_1[c] - data->counters_0[c];
         }
-        printf("%10u,%10f,", data->tid,
+        printf("%14u,%14f,", data->tid,
                kperf_ticks_to_ns(data->timestamp_1 - data->timestamp_0) / 1000000000.0);
         for (usize i = 0; i < ev_count; i++) {
             u64 val = counters_one[counter_map[i]];
-            printf("%10llu,", val);
+            printf("%14llu,", val);
         }
         printf("\n");
     }

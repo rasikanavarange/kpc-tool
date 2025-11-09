@@ -23,6 +23,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		73EC33702EABE0F900179EBA /* scripts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = scripts;
+			sourceTree = "<group>";
+		};
 		7A9FA6A12E96AE5400D4B2E7 /* kpc_tool */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = kpc_tool;
@@ -44,6 +49,7 @@
 		7A9FA6962E96AE5300D4B2E7 = {
 			isa = PBXGroup;
 			children = (
+				73EC33702EABE0F900179EBA /* scripts */,
 				7A9FA6A12E96AE5400D4B2E7 /* kpc_tool */,
 				7A9FA6A02E96AE5400D4B2E7 /* Products */,
 			);
@@ -73,6 +79,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				73EC33702EABE0F900179EBA /* scripts */,
 				7A9FA6A12E96AE5400D4B2E7 /* kpc_tool */,
 			);
 			name = kpc_tool;
